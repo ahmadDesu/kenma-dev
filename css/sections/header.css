@@ -1,0 +1,53 @@
+.header__nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: solid 1px #d0d0d0;
+}
+.header__logo-name {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+
+  list-style: none;
+}
+.header__menu li a {
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 400;
+  color: #1e1e1e;
+
+  transition: 0.2s;
+}
+.header__menu li a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+.header__button-contact button {
+  padding: 10px 25px;
+
+  border: none;
+  outline: none;
+  border-radius: 10px;
+
+  background-color: var(--primary-color);
+  color: #fff;
+
+  font-size: 20px;
+  font-weight: 600;
+}
+.menu-img, .close-icon, .menu-icon{
+  display: none;
+}
+.menu-img img{
+  width: 30px;
+  height: 30px;
+}

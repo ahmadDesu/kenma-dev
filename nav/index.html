@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">DesignX</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </nav>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, totam!
+        Sit consequuntur quo iusto saepe eligendi necessitatibus officia
+        delectus, distinctio recusandae debitis provident nemo, quis soluta
+        veritatis pariatur, non animi tenetur dolore quas! Possimus
+        exercitationem assumenda nam repudiandae eum! Eos, dolorum molestias
+        pariatur quaerat maxime quidem. Rem nulla aspernatur unde!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt illo
+        consequatur libero sed, eius doloremque ab asperiores non facere?
+        Tenetur rem minima facilis ut accusamus modi laborum natus amet possimus
+        deserunt, repellat in id dolores nam, nemo molestiae, perspiciatis eum.
+        Eligendi itaque dolor distinctio eveniet consequuntur quasi unde! Illo,
+        laudantium.
+      </p>
+      <p id="p">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit
+        perferendis molestiae odio culpa delectus quidem blanditiis saepe sunt,
+        minus itaque hic architecto, nam sint unde cupiditate magni officia
+        consequatur quae explicabo non id? Corrupti consequuntur beatae
+        reprehenderit cum earum ipsum iste, unde natus aut explicabo, possimus
+        voluptate laborum nemo. Aspernatur!
+      </p>
+
+      <button onclick="menu()">click</button>
+    </section>
+
+    <script>
+      function menu(){
+        document.getElementById("p").style.color = "red";
+      }
+    </script>
+  </body>
+</html>

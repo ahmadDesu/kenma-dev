@@ -1,0 +1,15 @@
+.tagline{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.tagline__content{
+    padding: 20px;
+    margin: 80px 0;
+    
+    background-color: var(--white-cream);
+}
+.tagline__content h2{
+    color: var(--primary-color);
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@import url("sections/header.css");
+@import url("sections/banner.css");
+@import url("sections/blog-post.css");
+@import url("sections/tagline.css");
+@import url("sections/footer.css");
+@import url("sections/component.css");
+@import url("sections/template-post.css");
+
+:root {
+  --primary-color: #e15f5f;
+  --poppins-serif: "Poppins", sans-serif;
+
+  --white-cream: #f3f3f3;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: var(--poppins-serif);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 840px) {
+  .header__logo-name {
+    font-size: 20px;
+  }
+  .header__menu {
+    gap: 30px;
+  }
+  .header__menu li a {
+    font-size: 16px;
+  }
+  .header__button-contact button {
+    font-size: 15px;
+  }
+  .banner {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #header-menu {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: -100%;
+    line-height: 50px;
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--primary-color);
+    transition: all 0.4s;
+  }
+  .header__menu li {
+    text-align: center;
+  }
+  .header__menu li a {
+    color: #ffff;
+  }
+  #button-contact {
+    position: fixed;
+    left: -100%;
+    transform: translateX(-50%);
+    top: 170px;
+    transition: all 0.4s;
+  }
+  .header__button-contact button {
+    background-color: #ffff;
+    color: var(--primary-color);
+
+    text-align: center;
+  }
+  .menu-img, .close-icon, .menu-icon{
+    display: block;
+  }
+  #closeIcon{
+    z-index: 100;
+    position: fixed;
+
+    left:-100%;
+    transition: all 0.4s;
+  }
+  
+}

@@ -1,0 +1,24 @@
+.component {
+  display: flex;
+}
+.component__menu-side {
+  width: 20%;
+  border-right: 1px solid var(--white-cream);
+
+  padding: 20px 30px;
+}
+.menu-side__nested-list-parent,
+.menu-side__nested-list-child {
+  list-style: none;
+}
+.menu-side__nested-list-child li {
+  padding: 0 20px;
+  border-left: 1px solid #000;
+}
+.menu-side__nested-list-child li:hover {
+  border-left: 1px solid var(--primary-color);
+}
+.menu-side__nested-list-child li a{
+  text-decoration: none;
+  color: #000;
+}

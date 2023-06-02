@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 230px;
+  padding: 20px;
+  margin-top: 0;
+
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.footer__social-media-link li {
+  list-style: none;
+}
+.footer__social-media-link li a {
+  text-decoration: none;
+  color: #fff;
+}
