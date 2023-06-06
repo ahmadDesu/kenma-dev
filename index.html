@@ -1,14 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hello. pusing</p>
-    <a href="/pages/component.html">klik here</a>
-    <a href="/new">pusing</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div class="header__logo-name">
+          <h3>Kenma-Dev</h3>
+        </div>
+        <ul class="header__menu" id="header-menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="new.html">Component</a></li>
+          <li><a href="/pages/template.html">Template</a></li>
+        </ul>
+        <div class="header__button-contact" id="button-contact">
+          <button>Contact Us</button>
+        </div>
+        <div class="menu-img">
+          <img
+            src="/assets/menu-icon.svg"
+            alt="menu icon"
+            class="menu-icon"
+            onclick="menuOpen()"
+          />
+          <img
+            src="/assets/close-icon.svg"
+            alt="close icon"
+            class="close-icon"
+            onclick="menuClose()"
+            id="closeIcon"
+          />
+        </div>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="banner__img">
+        <img src="assets/banner.svg" alt="banner" />
+      </div>
+    </section>
+    <section class="blog-post">
+      <div class="blog-post__title">
+        <h4>Blog Post</h4>
+      </div>
+      <ul class="blog-post__list">
+        <li>
+          <div class="blog-post__card">
+            <div class="card__thumbnail">
+              <img src="assets/img-post.png" alt="thumbnail" />
+            </div>
+            <div class="card__title">
+              <h3>Cara membuat mockup menggunakan figma</h3>
+            </div>
+            <div class="card__cta">
+              <a href="#">Baca selengkapnya...</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="blog-post__card">
+            <div class="card__thumbnail">
+              <img src="assets/img-post.png" alt="thumbnail" />
+            </div>
+            <div class="card__title">
+              <h3>Cara membuat mockup menggunakan figma</h3>
+            </div>
+            <div class="card__cta">
+              <a href="#">Baca selengkapnya...</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="blog-post__card">
+            <div class="card__thumbnail">
+              <img src="assets/img-post.png" alt="thumbnail" />
+            </div>
+            <div class="card__title">
+              <h3 id="card__title">
+                Cara membuat mockup menggunakan figma Cara membuat mockup
+                menggunakan figma Cara membuat mockup menggunakan figma
+              </h3>
+            </div>
+            <div class="card__cta">
+              <a href="#">Baca selengkapnya...</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="blog-post__card">
+            <div class="card__thumbnail">
+              <img src="assets/img-post.png" alt="thumbnail" />
+            </div>
+            <div class="card__title">
+              <h3>Cara membuat mockup menggunakan figma</h3>
+            </div>
+            <div class="card__cta">
+              <a href="#">Baca selengkapnya...</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="tagline">
+      <div class="tagline__content">
+        <h2>#MakeEasier</h2>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div class="footer__brand-name">
+          <div class="brand-name__title">
+            <h2>Kenma Dev</h2>
+          </div>
+          <div class="brand-name__description">
+            <p>Let’s build website for easier</p>
+          </div>
+        </div>
+        <div class="footer__social-media-link">
+          <li><a href="https://instagram.com">Instagram</a></li>
+          <li><a href="https://youtube.com">Youtube</a></li>
+          <li><a href="https://tiktok.com">Tiktok</a></li>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/script.js" type="module"></script>
+  </body>
 </html>
