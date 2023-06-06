@@ -15,6 +15,8 @@ function menuOpen() {
     document.getElementById("closeIcon").style.left = "90%";
     document.getElementById("button-contact").style.left = "50%";
 }
+
+document.getElementById('header-menu').style.left = menuOpen('header-menu', 0)
 function menuClose() {
     document.getElementById("header-menu").style.left = "-100%";
     document.getElementById("closeIcon").style.left = "-100%";
