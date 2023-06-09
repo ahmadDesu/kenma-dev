@@ -138,5 +138,7 @@ html {
   /* footer */
   .footer{
     flex-direction: column;
+
+    height: 200px;
   }
 }
