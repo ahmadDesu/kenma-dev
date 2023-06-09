@@ -16,9 +16,21 @@ function menuOpen() {
     document.getElementById("button-contact").style.left = "50%";
 }
 
-document.getElementById('header-menu').style.left = menuOpen('header-menu', 0)
 function menuClose() {
     document.getElementById("header-menu").style.left = "-100%";
     document.getElementById("closeIcon").style.left = "-100%";
     document.getElementById("button-contact").style.left = "-100%";
+}
+function menuComponentOpen() {
+    document.getElementById("component__menu-side").style.left = "0";
+    document.getElementById("component__result").style.filter = "blur(2px)"
+    document.getElementById("footer").style.filter = "blur(2px)"
+    document.body.style.overflow = "hidden"
+}
+
+function menuComponentClose() {
+    document.getElementById("component__menu-side").style.left = "-100%";
+    document.getElementById("component__result").style.filter = "blur(0)"
+    document.getElementById("footer").style.filter = "blur(0)"
+    document.body.style.overflow = "auto"
 }

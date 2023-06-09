@@ -13,59 +13,154 @@
         <div class="header__logo-name">
           <h3>Kenma-Dev</h3>
         </div>
-        <ul class="header__menu">
+        <ul class="header__menu" id="header-menu">
           <li><a href="../index.html">Home</a></li>
           <li><a href="component.html">Component</a></li>
           <li><a href="template.html">Template</a></li>
         </ul>
-        <div class="header__button-contact">
+        <div class="header__button-contact" id="button-contact">
           <button>Contact Us</button>
+        </div>
+        <div class="menu-img">
+          <img
+            src="/assets/menu-icon.svg"
+            alt="menu icon"
+            class="menu-icon"
+            onclick="menuOpen()"
+          />
+          <img
+            src="/assets/close-icon.svg"
+            alt="close icon"
+            class="close-icon"
+            onclick="menuClose()"
+            id="closeIcon"
+          />
         </div>
       </nav>
     </header>
 
     <section class="component">
-      <div class="component__menu-side">
-        <div class="menu-side__title">
-          <h2>CSS</h2>
-        </div>
-        <ul class="menu-side__nested-list-parent">
-          <li>
-            <h2>Navigation</h2>
-            <ul class="menu-side__nested-list-child">
-              <li><a href="#">navigation-one</a></li>
-              <li><a href="#">navigation-two</a></li>
-              <li><a href="#">navigation-three</a></li>
-              <li><a href="#">navigation-four</a></li>
-            </ul>
-          </li>
-          <li>
-            <h2>Banner</h2>
-            <ul class="menu-side__nested-list-child">
-              <li><a href="#">banner-one</a></li>
-              <li><a href="#">banner-two</a></li>
-              <li><a href="#">banner-three</a></li>
-              <li><a href="#">banner-four</a></li>
-            </ul>
-          </li>
-          <li>
-            <h2>Footer</h2>
-            <ul class="menu-side__nested-list-child">
-              <li><a href="#">footer-one</a></li>
-              <li><a href="#">footer-two</a></li>
-              <li><a href="#">footer-three</a></li>
-              <li><a href="#">footer-four</a></li>
-            </ul>
-          </li>
-        </ul>
+      <div class="component__header">
+        <img src="/assets/menu-icon.svg" alt="menu" onclick="menuComponentOpen()"/>
       </div>
       <div class="component__content">
-        <h2>Result</h2>
+        <div class="component__menu-side" id="component__menu-side">
+          <div class="menu-side__title">
+            <h2>CSS</h2>
+          </div>
+         <div class="scrollbox">
+          <ul class="menu-side__nested-list-parent">
+            <li>
+              <h2>Navigation</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">navigation-one</a></li>
+                <li><a href="#">navigation-two</a></li>
+                <li><a href="#">navigation-three</a></li>
+                <li><a href="#">navigation-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Banner</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">banner-one</a></li>
+                <li><a href="#">banner-two</a></li>
+                <li><a href="#">banner-three</a></li>
+                <li><a href="#">banner-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Footer</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">footer-one</a></li>
+                <li><a href="#">footer-two</a></li>
+                <li><a href="#">footer-three</a></li>
+                <li><a href="#">footer-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Footer</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">footer-one</a></li>
+                <li><a href="#">footer-two</a></li>
+                <li><a href="#">footer-three</a></li>
+                <li><a href="#">footer-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Banner</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">banner-one</a></li>
+                <li><a href="#">banner-two</a></li>
+                <li><a href="#">banner-three</a></li>
+                <li><a href="#">banner-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Footer</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">footer-one</a></li>
+                <li><a href="#">footer-two</a></li>
+                <li><a href="#">footer-three</a></li>
+                <li><a href="#">footer-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Banner</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">banner-one</a></li>
+                <li><a href="#">banner-two</a></li>
+                <li><a href="#">banner-three</a></li>
+                <li><a href="#">banner-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <h2>Footer</h2>
+              <ul class="menu-side__nested-list-child">
+                <li><a href="#">footer-one</a></li>
+                <li><a href="#">footer-two</a></li>
+                <li><a href="#">footer-three</a></li>
+                <li><a href="#">footer-four</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="close-icon">
+                <img src="/assets/close-icon.svg" alt="close-icon" onclick="menuComponentClose()">
+              </div>
+            </li>
+          </ul>
+         </div>
+        </div>
+        <div class="component__result" id="component__result">
+          <h2>Result</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            tempore quidem sequi rem quasi nulla quam adipisci ratione eaque
+            dolore dolores omnis, accusamus tenetur repellat voluptas magnam?
+            Eaque ea asperiores molestiae, fuga ullam quibusdam impedit
+            praesentium sit atque eius possimus ipsa magni soluta laudantium
+            aspernatur accusantium et iusto doloribus. Quia maxime obcaecati
+            voluptatem sunt fugit ipsam labore at totam placeat porro, enim
+            voluptatibus ab odio dolor velit optio consequatur, cum quaerat
+            eaque blanditiis modi expedita officia soluta eveniet? Quaerat,
+            quod! Enim eaque, reiciendis quae sed alias in voluptates laborum
+            expedita culpa dignissimos, totam quod architecto fugiat quis
+            nesciunt quibusdam repellendus?
+            Eaque ea asperiores molestiae, fuga ullam quibusdam impedit
+            praesentium sit atque eius possimus ipsa magni soluta laudantium
+            aspernatur accusantium et iusto doloribus. Quia maxime obcaecati
+            voluptatem sunt fugit ipsam labore at totam placeat porro, enim
+            voluptatibus ab odio dolor velit optio consequatur, cum quaerat
+            eaque blanditiis modi expedita officia soluta eveniet? Quaerat,
+            quod! Enim eaque, reiciendis quae sed alias in voluptates laborum
+            expedita culpa dignissimos, totam quod architecto fugiat quis
+            nesciunt quibusdam repellendus?
+          </p>
+        </div>
       </div>
     </section>
 
     <footer>
-      <div class="footer">
+      <div class="footer" id="footer">
         <div class="footer__brand-name">
           <div class="brand-name__title">
             <h2>Kenma Dev</h2>
@@ -81,5 +176,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

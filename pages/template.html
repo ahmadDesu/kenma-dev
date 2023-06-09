@@ -13,20 +13,35 @@
         <div class="header__logo-name">
           <h3>Kenma-Dev</h3>
         </div>
-        <ul class="header__menu">
-          <li><a href="../home.html">Home</a></li>
+        <ul class="header__menu" id="header-menu">
+          <li><a href="../index.html">Home</a></li>
           <li><a href="component.html">Component</a></li>
           <li><a href="template.html">Template</a></li>
         </ul>
-        <div class="header__button-contact">
+        <div class="header__button-contact" id="button-contact">
           <button>Contact Us</button>
+        </div>
+        <div class="menu-img">
+          <img
+            src="/assets/menu-icon.svg"
+            alt="menu icon"
+            class="menu-icon"
+            onclick="menuOpen()"
+          />
+          <img
+            src="/assets/close-icon.svg"
+            alt="close icon"
+            class="close-icon"
+            onclick="menuClose()"
+            id="closeIcon"
+          />
         </div>
       </nav>
     </header>
-    <section class="template-post">
-      <ul class="template-post__list-template">
+    <section class="template">
+      <ul class="template__list-template">
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -40,7 +55,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -54,7 +69,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -68,7 +83,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -82,7 +97,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -96,7 +111,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -110,7 +125,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -124,7 +139,7 @@
           </div>
         </li>
         <li>
-          <div class="template-post__card">
+          <div class="template__card">
             <div class="card__thumbnail">
               <img src="/assets/img-post.png" alt="thumbnail" />
             </div>
@@ -156,5 +171,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

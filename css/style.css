@@ -2,11 +2,11 @@
 
 @import url("sections/header.css");
 @import url("sections/banner.css");
-@import url("sections/blog-post.css");
+@import url("sections/blog.css");
 @import url("sections/tagline.css");
 @import url("sections/footer.css");
 @import url("sections/component.css");
-@import url("sections/template-post.css");
+@import url("sections/template.css");
 
 :root {
   --primary-color: #e15f5f;
@@ -26,7 +26,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.test-template {
+  color: #e15f5f;
+}
+html {
+  height: 100%;
+}
 @media screen and (max-width: 840px) {
   .header__logo-name {
     font-size: 20px;
@@ -67,7 +72,7 @@ body {
     position: fixed;
     left: -100%;
     transform: translateX(-50%);
-    top: 170px;
+    top: 173px;
     transition: all 0.4s;
   }
   .header__button-contact button {
@@ -76,15 +81,32 @@ body {
 
     text-align: center;
   }
-  .menu-img, .close-icon, .menu-icon{
+  .menu-img,
+  .close-icon,
+  .menu-icon {
     display: block;
   }
-  #closeIcon{
+  .menu-img img {
+    width: 25px;
+    height: 25px;
+  }
+  #closeIcon {
     z-index: 100;
     position: fixed;
 
-    left:-100%;
+    left: -100%;
+    top: 10px;
     transition: all 0.4s;
   }
-  
+  /* component__side__responsive */
+  .component__menu-side {
+    position: absolute;
+    left: -100%;
+    width: 80%;
+    top: 0;
+    z-index: 20;
+    transition: all 0.4s;
+
+    background-color: var(--white-cream);
+  }
 }
