@@ -50,3 +50,7 @@
   right: 10px;
   top: 20px;
 }
+.component__result{
+  position: relative;
+  z-index: -1;
+}
