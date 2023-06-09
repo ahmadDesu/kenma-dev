@@ -31,9 +31,6 @@
 
   border-radius: 10px;
 }
-.card__title {
-  flex: 1;
-}
 .card__cta {
   justify-content: space-between;
 }

@@ -40,9 +40,9 @@
   border-radius: 10px;
 }
 .card__title{
-    flex: 1;
+  flex: 1;
 }
-.card__cta a{
-    color: var(--primary-color);
-    text-decoration: none;
+.card__cta a {
+  color: var(--primary-color);
+  text-decoration: none;
 }

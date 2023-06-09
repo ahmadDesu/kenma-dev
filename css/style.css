@@ -113,15 +113,16 @@ html {
     background-color: var(--white-cream);
   }
   /* blog card */
-  .blog-post__title {
-    font-size: 24px;
-  }
   .blog-post__card {
-    height: 340px;
+    height: 270px;
     width: 220px;
     padding: 10px;
 
     border-radius: 10px;
+  }
+  .blog-post__title {
+    font-size: 22px;
+    font-weight: 200;
   }
   .card__thumbnail img {
     width: 100%;
@@ -129,5 +130,9 @@ html {
     object-fit: cover;
   
     border-radius: 5px;
+  }
+  .blog-post__card .card__title h3{
+    font-size: 14px;
+    font-weight: 600;
   }
 }
