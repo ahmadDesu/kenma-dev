@@ -135,4 +135,8 @@ html {
     font-size: 14px;
     font-weight: 600;
   }
+  /* footer */
+  .footer{
+    flex-direction: column;
+  }
 }
